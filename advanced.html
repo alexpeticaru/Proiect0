@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title>Advanced Search</title>
+     <link rel="stylesheet" href="style.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img width="40px" height="40px" style="margin-right:20px;"src="small-logo.png" alt="small-logo"/>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="image.html">Google Images</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="advanced.html">Google Advanced Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="app-title">Advanced Search</div>
+    <div class="separator"></div>
+    <div class="advanced-search">
+      <form action="https://www.google.com/search" method="get">
+        <div class="head-row form-row">
+          <label>Find pages with...</label>
+          <div id="empty"></div>
+          <label style="margin-left: 10px;">To do this in the search box.</label>
+        </div>
+        <div class="form-row">
+          <label>All these words:</label>
+          <input type="text" name="as_q"/>
+          <div class="info">
+              Type the important words: <span class="monospace">tri-colour rat terrier</span>
+          </div>
+        </div>
+        <div class="form-row">
+            <label>This exact word or phrase:</label>
+            <input type="text" name="as_epq"/>
+            <div class="info">
+              Put exact words in quotes: <span class="monospace">"rat terrier"</span>
+            </div>
+        </div>
+        <div class="form-row">
+            <label>Any of these words: </label>
+            <input type="text" name="as_oq"/>
+            <div class="info">
+                Type OR between all the words you want: <span class="monospace">miniature OR standard</span>
+            </div>
+        </div>
+        <div class="form-row">
+            <label>None of these words:</label>
+            <input type="text" name="as_eq"/>
+            <div class="info">
+                Put a minus sign just before words that you don't want: <span class="monospace">-rodent, -"Jack Russell"</span>
+            </div>
+        </div>
+        <div class="form-row" >
+          <label></label>
+          <div class="button-container">
+            <input  id="submit-button" type="submit" class="blue-button" value="Google Advanced Search">
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
